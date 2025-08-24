@@ -4,7 +4,6 @@ import com.codeborne.selenide.Selenide;
 import gherkin.ast.Scenario;
 import io.cucumber.java.AfterStep;
 
-
 public class AfterStepHooks {
 
     @AfterStep

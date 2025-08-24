@@ -17,9 +17,10 @@ public class KlavoGonkiStep {
     private final SelenideElement afterFocusWord = $x("//span[@id='afterfocus']");
     private final SelenideElement resultText = $x("//td[text()='Это вы']//ancestor-or-self::div//div[@class='stats']//div[2]/span/span");
 
-    private String getCurrentWord(){
+    private String getCurrentWord() {
         return highlightWord.getText().replaceAll("с", "c").replaceAll("o", "о");
     }
+
     @When("Начинаем игру")
     public void startGame() {
         closeWindowButton.click();
@@ -54,4 +55,3 @@ public class KlavoGonkiStep {
         Assertions.assertTrue(resultNumber > minValue, "Актуальный результат был: " + resultNumber);
     }
 }
-
