@@ -1,2 +1,12 @@
-# Project exclude paths
 /target/
+.idea
+.allure/
+build/
+out
+*.iml
+*.yml
+.jar
+*.exe
+
+# Explicitly include klavogonki.feature
+!klavogonki.feature
