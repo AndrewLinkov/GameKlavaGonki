@@ -4,6 +4,7 @@ Feature: Бот для сайта клавагонки.
     Given Открываем сайт "https://klavogonki.ru/go?type=normal"
 
   Scenario: Бот запускает игру
+
     When Начинаем игру
     And Ждем начала игры
     And Вводим подсвеченное слово в цикле
